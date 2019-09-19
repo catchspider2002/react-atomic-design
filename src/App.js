@@ -1,6 +1,7 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import Card from "./Molecules/MoleculeCard";
+import "./bootstrap-custom.css"
 
 const App = () => (
     <div className="App">
@@ -13,6 +14,7 @@ const App = () => (
             >
                 Learn React
             </a>
+      <Card title="New title" subtitle="Sub" />
         </header>
     </div>
 );
