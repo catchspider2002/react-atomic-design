@@ -3,6 +3,7 @@ import Progress from "./Atoms/AtomProgress";
 
 const MoleculeProgress = props => (
     <>
+        <h6 className="text-left">{props.label}</h6>
         <Progress />
     </>
 );

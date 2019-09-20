@@ -5,7 +5,7 @@ const AtomProgress = props => (
         <div
             className="progress-bar"
             role="progressbar"
-            aria-valuenow="75"
+            aria-valuenow="50"
             aria-valuemin="0"
             aria-valuemax="100"
         />
