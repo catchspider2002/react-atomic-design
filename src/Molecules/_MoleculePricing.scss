@@ -1,0 +1,42 @@
+$triangle-height: 15;
+
+.pricingTable {
+    text-align: center;
+}
+
+.pricingHeader {
+    position: relative;
+    background-color: $theme-color-custom;
+    /* height: 50px !important; */
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+
+    span {
+        color: $text-color-custom;
+        width: 100%;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin-left: -$triangle-height + px;
+        border-top: solid $triangle-height + px $theme-color-custom;
+        border-left: solid $triangle-height + px transparent;
+        border-right: solid $triangle-height + px transparent;
+    }
+}
+
+.disabledPricingText {
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+.enabledPricingText {
+    color: $inverted-color-custom;
+}

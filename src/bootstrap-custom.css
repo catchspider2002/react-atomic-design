@@ -1199,3 +1199,42 @@ pre {
   @media (prefers-reduced-motion: reduce) {
     .progress-bar-animated {
       animation: none; } }
+
+.title {
+  font-size: 4em; }
+
+.pricingTable {
+  text-align: center; }
+
+.pricingHeader {
+  position: relative;
+  background-color: #e15915;
+  /* height: 50px !important; */
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  padding: 15px; }
+  .pricingHeader span {
+    color: white;
+    width: 100%; }
+  .pricingHeader:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -15px;
+    border-top: solid 15px #e15915;
+    border-left: solid 15px transparent;
+    border-right: solid 15px transparent; }
+
+.disabledPricingText {
+  color: #ccc;
+  text-decoration: line-through; }
+
+.enabledPricingText {
+  color: black; }
+
+body {
+  background-color: white; }

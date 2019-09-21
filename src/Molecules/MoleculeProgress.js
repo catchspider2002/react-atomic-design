@@ -3,8 +3,11 @@ import Progress from "./Atoms/AtomProgress";
 
 const MoleculeProgress = props => (
     <>
-        <h6 className="text-left">{props.label}</h6>
-        <Progress />
+        <div className="grid-2 moleculeProgress">
+            <span className="smallest-text text-left grid-item-1">{props.label}</span>
+            <span className="smallest-text text-right grid-item-2">{props.value}%</span>
+            <Progress value={props.value} />
+        </div>
     </>
 );
 

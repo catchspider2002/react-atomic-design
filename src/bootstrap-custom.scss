@@ -1,3 +1,19 @@
+$theme-color-custom: #e15915;
+$text-color-custom: white;
+$inverted-color-custom: white;
+$theme-custom: "light";
+$background-color: white;
+
+@if $theme-custom == dark {
+    $text-color-custom: black;
+    $background-color: #666;
+    $inverted-color-custom: white;
+} @else {
+    $text-color-custom: white;
+    $background-color: white;
+    $inverted-color-custom: black;
+}
+
 // Required
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
@@ -11,3 +27,15 @@
 @import "../node_modules/bootstrap/scss/grid";
 @import "../node_modules/bootstrap/scss/card";
 @import "../node_modules/bootstrap/scss/progress";
+
+@import "../node_modules/rfs/scss";
+
+.title {
+    @include font-size(4em);
+}
+
+@import "./Molecules/MoleculePricing";
+
+body {
+    background-color: $background-color; 
+}
